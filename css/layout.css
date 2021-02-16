@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.show {
+  width: 35%;
+  display: inline-block;
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+img {
+  width: 20rem;
+  height: 20rem;
+  
+}
+
+#photo-template,
+#allFirItems,
+#allSenItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  margin: 30px;
+  width: 25%;
+}
+
