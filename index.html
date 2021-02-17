@@ -15,13 +15,13 @@
   <header>
     <h1 id='hader'>The Gallery of Horns</h1>
     <div class='header-cont'>
-      <h2 id="SelectByKeyword">Select By Keyword:</h2>
+      <h2>Select By Keyword:</h2>
       <select id='select'>
-        <option value="default">Filter by Keyword</option>
+        <option value="default">All</option>
       </select>
     </div>
     <div class='header-cont'>
-      <h2 id="SortBy">Sort By:</h2>
+      <h2>Sort By:</h2>
       <select id='sort-by'>
         <option value="default">Sort By</option>
         <option value="keyword">keyword</option>
@@ -30,14 +30,14 @@
       </select>
     </div>
     <div class='header-cont'>
-      <h2 id="QuickSort">
+      <h2>
         Quick Sort
       </h2>
       <button id='quick-sort-title'>Sort By Title</button>
       <button id='quick-sort-horns'>Sort By Horns</button>
     </div>
     <div class='header-cont'>
-      <h2 id="Pages">
+      <h2>
         Pages
       </h2>
       <button id='switch-first-page'>First Page</button>
@@ -54,14 +54,23 @@
     </section>
     <div id='allFirItems'>
     </div>
-    <template id="allSenItems" type="text/x-tmpl-mustache">
-      <h2>{{title}}</h2>
-      <img src={{image_url}}>
-      <h3>{{description}}</h3>
+    <div>
+      <template id="allSenItems" type="text/x-tmpl-mustache">
+        <div class="card-2nd">
+        <h2>{{title}}</h2>
+        <img src={{image_url}}>
+        <h3>{{description}}</h3>
+        <h4 class="horns">{{horns}}</h4>
+        <h4 class="keyword">{{keyword}}</h4>
+        </div>
+      </template>
+      <div id = 'senContent'>
+
       </div>
-    </template>
+    </div>
   </main>
   <footer>
+    contact as: areej.obaid@yahoo.com
   </footer>
   <script src="https://unpkg.com/mustache@latest"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
